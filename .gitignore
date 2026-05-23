@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# Environment Variables (Secrets)
+.env
+.env.*
+.env.example
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Project Specific: Data and Models
+# We ignore the contents of data folders as they usually contain large files
+**/data/**
+!**/data/
+!**/data/**/.gitkeep
+
+# Ignore ML artifacts/models
+**/artifacts/*.joblib
+**/artifacts/*.pkl
+**/artifacts/*.model
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# OS Specific
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# dbt specific
+**/dbt_project/target/
+**/dbt_project/dbt_packages/
+**/dbt_project/logs/
+**/dbt_project/profiles.yml
+
+# Airflow
+**/airflow/logs/
+**/airflow/airflow.db
+
+# Testing and Linting
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.cache
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+# Master Orchestration
+start_all.sh
+
+# whitelisting
+!.env.example
+
